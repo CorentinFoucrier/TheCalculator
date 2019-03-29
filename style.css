@@ -1,0 +1,67 @@
+body {
+	font-family: Arial;
+	display: flex;
+	justify-content: center;
+	margin-top: 5em;
+}
+
+#calculator {
+	-webkit-border-radius: 4;
+	-moz-border-radius: 4;
+	border-radius: 4px;
+	border: solid black 1px;
+	padding: 1em 1em 1em 1em;
+}
+
+#zero {
+	display: flex;
+	justify-content: center;
+}
+
+#affichage {
+	display: flex;
+	justify-content: flex-end;
+	-webkit-border-radius: 4;
+	-moz-border-radius: 4;
+	border-radius: 4px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	background: #808080;
+	padding: 7px 14px 7px 14px;
+	border: solid black 1px;
+	text-decoration: none;
+}
+
+#pad1, #pad2, #pad3 {
+	margin-top: 1.5em;
+}
+
+.btn {
+	-webkit-border-radius: 4;
+	-moz-border-radius: 4;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 2px 3px black;
+	-moz-box-shadow: 0px 2px 3px black;
+	box-shadow: 0px 2px 3px black;
+	color: #ffffff;
+	font-size: 20px;
+	background: #808080;
+	padding: 7px 14px 7px 14px;
+	text-decoration: none;
+	cursor:pointer;
+	margin: 0.9em 2px 0 0;
+}
+
+.btn:hover {
+	background: #474747;
+	text-decoration: none;
+	-webkit-box-shadow: 0px 1px 3px black;
+	-moz-box-shadow: 0px 1px 3px black;
+	box-shadow: 0px 1px 3px black;
+	}
+
+.btn:active {
+	position: relative;
+	top: 1px;
+}

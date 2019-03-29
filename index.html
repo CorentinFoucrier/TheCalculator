@@ -3,9 +3,34 @@
 	<head>
 		<title>Calculator2000</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
+		<div id="calculator">
+			<div id="affichage">50</div>
 
+			<div id="pad1">
+				<span class="btn" onclick="one()">1</span>
+				<span class="btn" onclick="two()">2</span>
+				<span class="btn" onclick="tree()">3</span>
+			</div>
+
+			<div id="pad2">
+				<span class="btn" onclick="four()">4</span>
+				<span class="btn" onclick="five()">5</span>
+				<span class="btn" onclick="six()">6</span>
+			</div>
+
+			<div id="pad3">
+				<span class="btn" onclick="seven()">7</span>
+				<span class="btn" onclick="eight()">8</span>
+				<span class="btn" onclick="nine()">9</span>
+			</div>
+
+			<div id="zero">
+				<span class="btn" onclick="zero()">0</span>
+			</div>
+		</div>
 		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
