@@ -6,7 +6,7 @@ function affichage(input) {
 }
 
 function nbPad(nb) {
-	affichage(input); //replace 0 par rien
+	affichage(' '); //replace 0 par rien
 	input+=nb;
 	affichage(input); //ajout nb en strig à input
 }
@@ -20,4 +20,9 @@ function operator(optr) {
 function result() {
 	nbResult = eval(input);
 	document.getElementById('affichage').innerHTML = nbResult;
+}
+
+function reset() {
+	input = '';
+	affichage('0')
 }
