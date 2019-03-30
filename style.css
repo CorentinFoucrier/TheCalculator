@@ -29,10 +29,14 @@ body {
 	text-decoration: none;
 }
 
-#pad1, #pad2, #pad3, #pad4 {
+#pad0, #pad1, #pad2, #pad3, #pad4 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+#pad0 {
+	justify-content: flex-end;
 }
 
 .btn {

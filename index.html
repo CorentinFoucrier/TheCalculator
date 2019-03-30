@@ -7,33 +7,37 @@
 	</head>
 	<body>
 		<div id="calculator">
-			<div id="affichage">50</div>
+			<div id="affichage">0</div>
+
+			<div id="pad0">
+				
+			</div>
 
 			<div id="pad1">
-				<div class="btn" onclick="one()"><p>1</p></div>
-				<div class="btn" onclick="two()"><p>2</p></div>
-				<div class="btn" onclick="tree()"><p>3</p></div>
-				<div class="btn" onclick="plus()"><p>+</p></div>
+				<div class="btn" onclick="nbPad('1')"><p>1</p></div>
+				<div class="btn" onclick="nbPad('2')"><p>2</p></div>
+				<div class="btn" onclick="nbPad('3')"><p>3</p></div>
+				<div class="btn" onclick="operator('+')"><p>+</p></div>
 			</div>
 
 			<div id="pad2">
-				<div class="btn" onclick="four()"><p>4</p></div>
-				<div class="btn" onclick="five()"><p>5</p></div>
-				<div class="btn" onclick="six()"><p>6</p></div>
-				<div class="btn" onclick="multiplicate()"><p>x</p></div>
+				<div class="btn" onclick="nbPad('4')"><p>4</p></div>
+				<div class="btn" onclick="nbPad('5')"><p>5</p></div>
+				<div class="btn" onclick="nbPad('6')"><p>6</p></div>
+				<div class="btn" onclick="operator('*')"><p>x</p></div>
 			</div>
 
 			<div id="pad3">
-				<div class="btn" onclick="seven()"><p>7</p></div>
-				<div class="btn" onclick="eight()"><p>8</p></div>
-				<div class="btn" onclick="nine()"><p>9</p></div>
-				<div class="btn" onclick="minus()"><p>-</p></div>
+				<div class="btn" onclick="nbPad('7')"><p>7</p></div>
+				<div class="btn" onclick="nbPad('8')"><p>8</p></div>
+				<div class="btn" onclick="nbPad('9')"><p>9</p></div>
+				<div class="btn" onclick="operator('-')"><p>-</p></div>
 			</div>
 
 			<div id="pad4">
-				<div class="btn" onclick="zero()"><p>0</p></div>
-				<div class="btn" id="equal" onclick="equal()"><p>=</p></div>
-				<div class="btn" onclick="divide()"><p>/</p></div>
+				<div class="btn" onclick="nbPad('0')"><p>0</p></div>
+				<div class="btn" id="equal" onclick="result()"><p>=</p></div>
+				<div class="btn" onclick="operator('/')"><p>/</p></div>
 			</div>
 		</div>
 		<script type="text/javascript" src="script.js"></script>
