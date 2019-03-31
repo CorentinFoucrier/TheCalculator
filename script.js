@@ -12,17 +12,20 @@ function nbPad(nb) {
 }
 
 function operator(optr) {
-	affichage(input);
-	input = input + ' ' +optr+ ' ';
+	input = input + ' ' +optr+ ' '; //ajout de l'opérateur en strig à input
 	affichage(input);
 }
 
 function result() {
-	nbResult = eval(input);
-	document.getElementById('affichage').innerHTML = nbResult;
+	nbResult = eval(input); //opération sur une chaine
+	if (nbResult === undefined) {
+		document.getElementById('affichage').innerHTML = input;
+	} else {
+		document.getElementById('affichage').innerHTML = nbResult;
+	}
 }
 
 function reset() {
 	input = '';
-	affichage('0')
+	affichage('0');
 }
