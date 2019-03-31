@@ -22,7 +22,7 @@ function operator(optr) {
 function result() {
 	nbResult = eval(input); //opération sur une chaine
 	if (nbResult === undefined) {
-		document.getElementById('affichage').innerHTML = input;
+		affichage('0');
 	} else {
 		document.getElementById('affichage').innerHTML = nbResult;
 	}
