@@ -12,8 +12,8 @@ function nbPad(nb) {
 }
 
 function operator(optr) {
-	if (input === ' ') {
-		input+=0;
+	if (input === '') {
+		nbPad('0');
 	}
 	input = input + ' ' +optr+ ' '; //ajout de l'opérateur en strig à input
 	affichage(input);
