@@ -24,7 +24,8 @@ function result() {
 	if (nbResult === undefined) {
 		affichage('0');
 	} else {
-		document.getElementById('affichage').innerHTML = nbResult;
+		document.getElementById('affichage').innerHTML = nbResult; //dès que égale est appuyé
+		input = '';
 	}
 }
 
