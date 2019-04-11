@@ -25,7 +25,6 @@ function result() {
 		affichage('0');
 	} else {
 		document.getElementById('affichage').innerHTML = nbResult; //dès que égale est appuyé
-		input = '';
 	}
 }
 
