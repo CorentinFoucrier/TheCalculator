@@ -1,39 +1,17 @@
-@media all and (max-device-width: 576px) { 
-	#calculator {
-		width: 70%;
-		height: 1200px;
-	}
-	#affichage {
-		font-size: 5em;
-	}
-	.btn {
-		font-size: 5em;
-	}
-}
-
-@media all and (min-device-width: 576px) { 
-	#affichage {
-		font-size: 20px;
-	}
-	.btn {
-		font-size: 20px;
-	}
-}
-
 body {
 	font-family: Arial;
+	text-align: center;
 	display: flex;
 	justify-content: center;
 	margin-top: 5em;
 }
 
+p {
+	margin: 0.2em 0 0 0;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+}
 
 #calculator {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	-webkit-border-radius: 4;
-	-moz-border-radius: 4;
 	border-radius: 4px;
 	border: solid black 1px;
 	padding: 1em 1em 1em 1em;
@@ -48,26 +26,12 @@ body {
 	font-family: Arial;
 	color: #ffffff;
 	background: #808080;
-	padding: 7px 14px 7px 14px;
+	padding: 0.5em 1em 0.5em 1em;
 	border: solid black 1px;
 	text-decoration: none;
 }
 
-#pad0, #pad1, #pad2, #pad3, #pad4 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-#pad0 {
-	justify-content: flex-end;
-}
-
-.btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/*---*/
+.custom-btn {
 	-webkit-border-radius: 4;
 	-moz-border-radius: 4;
 	border-radius: 4px;
@@ -76,15 +40,15 @@ body {
 	box-shadow: 0px 2px 3px black;
 	color: #ffffff;
 	background: #808080;
-	padding: 7px 14px 7px 14px;
+	/*padding: 0.5em 1em 0.5em 1em;*/
 	text-decoration: none;
 	cursor: pointer;
 	margin: 0.4em 0.4em 0.4em 0.4em;
-	width: 1.5em;
-	height: 1.5em;
+	height: 3em;
+	width: 3em;
 }
 
-.btn:hover {
+.custom-btn:hover {
 	background: #474747;
 	text-decoration: none;
 	-webkit-box-shadow: 0px 1px 3px black;
@@ -92,11 +56,7 @@ body {
 	box-shadow: 0px 1px 3px black;
 	}
 
-.btn:active {
+.custom-btn:active {
 	position: relative;
 	top: 1px;
-}
-
-#equal {
-	width: 5.2em;
 }
